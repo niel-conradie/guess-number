@@ -8,7 +8,8 @@ def user_guess(number):
     player_input = 0
     while player_input != random_number:
         # Requesting player input.
-        player_input = int(input(f"\nGuess the number between 1 and {number}: "))
+        player_input = int(
+            input(f"\nGuess the number between 1 and {number}: "))
 
         # Too Low/High player input conditions.
         if player_input < random_number:
