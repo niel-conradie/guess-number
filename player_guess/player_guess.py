@@ -26,7 +26,8 @@ class PlayerGuess:
         """ Requesting user input and validating number. """
         while True:
             try:
-                user_input_guess = int(input(f"\nGuess number between 1 and {user_input}: "))
+                user_input_guess = int(
+                    input(f"\nGuess number between 1 and {user_input}: "))
                 return user_input_guess
             except ValueError:
                 print(f"\nThat is not a number.")
