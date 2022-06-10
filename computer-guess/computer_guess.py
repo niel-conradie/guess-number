@@ -12,6 +12,8 @@ class ComputerGuess:
                 user_input = int(input("\nSelect a number to guess: "))
                 if user_input > 0:
                     return user_input
+                elif user_input == 0:
+                    print("\nThat is not a valid number.")
                 else:
                     print("\nThat is a negative number.")
                     continue
