@@ -10,7 +10,11 @@ class ComputerGuess:
         while True:
             try:
                 user_input = int(input("\nSelect a number to guess: "))
-                return user_input
+                if user_input > 0:
+                    return user_input
+                else:
+                    print("\nThat is a negative number.")
+                    continue
             except ValueError:
                 print(f"\nThat is not a number.")
                 continue
