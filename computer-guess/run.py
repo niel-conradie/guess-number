@@ -5,10 +5,17 @@ def run():
     """ Computer Guess. """
     run = ComputerGuess()
 
-    # Requesting user input.
-    user_input = run.user_input()
-    # Computer guess the number.
-    run.computer_guess(user_input)
+    while True:
+        # Requesting user input.
+        user_input = run.user_input()
+
+        # Computer guess the number.
+        run.computer_guess(user_input)
+
+        # Requesting user input.
+        run.restart()
+
+        continue
 
 
 if __name__ == "__main__":
