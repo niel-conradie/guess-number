@@ -52,3 +52,20 @@ class ComputerGuess:
                 low = guess + 1
 
         print(f"\nThe computer have guessed the number {guess} correctly!")
+
+    @staticmethod
+    def restart():
+        """ Requesting user input and validating choice. """
+        while True:
+            user_input = input("\nRestart? Yes/No: ").lower()
+            choices = ['yes', 'no']
+            if user_input not in choices:
+                print("\nPlease type 'yes' or 'no'")
+                continue
+
+            # User input conditions.
+            if user_input == 'yes':
+                break
+            if user_input == 'no':
+                print("\nThank you for playing!")
+                quit()
