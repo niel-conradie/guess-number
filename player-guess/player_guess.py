@@ -4,6 +4,10 @@ import random
 class PlayerGuess:
     """ A class to represent a guess game. """
 
+    def __init__(self):
+        """ Initialize class attributes. """
+        self.player_score = 0
+
     @staticmethod
     def user_input():
         """ Requesting user input and validating number. """
@@ -18,7 +22,7 @@ class PlayerGuess:
                     print("\nThat is a negative number.")
                     continue
             except ValueError:
-                print(f"\nThat is not a number.")
+                print("\nThat is not a number.")
                 continue
 
     @staticmethod
@@ -36,7 +40,7 @@ class PlayerGuess:
                     input(f"\nGuess number between 1 and {user_input}: "))
                 return user_input_guess
             except ValueError:
-                print(f"\nThat is not a number.")
+                print("\nThat is not a number.")
                 continue
 
     @staticmethod
@@ -49,6 +53,14 @@ class PlayerGuess:
         else:
             print("\nCongratulations!")
             print(f"You have guessed the number {random_number} correctly!")
+
+    def add_player_score(self):
+        """ Add point to the player score. """
+        self.player_score += 1
+
+    def display_scoreboard(self):
+        """ Display the amount of correct answers. """
+        print(f"Correct: {self.player_score}")
 
     @staticmethod
     def restart():
