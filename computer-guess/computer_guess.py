@@ -4,6 +4,10 @@ import random
 class ComputerGuess:
     """ A class to represent a guess game. """
 
+    def __init__(self):
+        """ Initialize class attributes. """
+        self.computer_score = 0
+
     @staticmethod
     def user_input():
         """ Requesting user input and validating number. """
@@ -18,7 +22,7 @@ class ComputerGuess:
                     print("\nThat is a negative number.")
                     continue
             except ValueError:
-                print(f"\nThat is not a number.")
+                print("\nThat is not a number.")
                 continue
 
     @staticmethod
@@ -52,6 +56,14 @@ class ComputerGuess:
                 low = guess + 1
 
         print(f"\nThe computer have guessed the number {guess} correctly!")
+
+    def add_computer_score(self):
+        """ Add point to the computer score. """
+        self.computer_score += 1
+
+    def display_scoreboard(self):
+        """ Display the amount of correct answers. """
+        print(f"Correct: {self.computer_score}")
 
     @staticmethod
     def restart():
