@@ -2,7 +2,7 @@ from computer_guess import ComputerGuess
 
 
 def run():
-    """ Computer Guess. """
+    """Computer Guess."""
     run = ComputerGuess()
 
     while True:
