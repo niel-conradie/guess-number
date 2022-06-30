@@ -51,10 +51,8 @@ class PlayerGuess:
         elif user_input_guess > random_number:
             print("\nToo High! Guess again.")
         else:
-            print(
-                "\nCongratulations!"
-                f"\nYou have guessed the number {random_number} correctly!"
-            )
+            print("\nCongratulations!")
+            print(f"\nYou have guessed the number {random_number} correctly!")
 
     def add_player_score(self):
         """Add point to the player score."""
