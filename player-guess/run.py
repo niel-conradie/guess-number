@@ -2,7 +2,7 @@ from player_guess import PlayerGuess
 
 
 def run():
-    """ Player Guess. """
+    """Player Guess."""
     run = PlayerGuess()
 
     while True:
