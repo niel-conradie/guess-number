@@ -40,8 +40,8 @@ class ComputerGuess:
             # Requesting user input and validating choice.
             while True:
                 user_input = input(
-                    f"\nIf {guess} is correct then type 'C',\n"
-                    "too low 'L', and too high 'H': "
+                    f"\nIf {guess} is correct then type 'C',"
+                    "\ntoo low 'L', and too high 'H': "
                 ).lower()
 
                 choices = ["c", "l", "h"]
