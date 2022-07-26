@@ -100,10 +100,3 @@ class NumberGuess:
             if user_input == "no":
                 print("\nThank you for playing!")
                 quit()
-
-
-if __name__ == "__main__":
-    run = NumberGuess()
-
-    # Starting the game.
-    run.start_game()
