@@ -81,15 +81,23 @@ class NumberGuess:
     def restart():
         """Requesting user input and validating choice."""
         while True:
-            user_input = input("\nRestart? Yes/No: ").lower()
-            choices = ["yes", "no"]
-            if user_input not in choices:
-                print("\nPlease type 'yes' or 'no'")
+            print("\nPlay Again?")
+            print("Yes: Type '1'")
+            print("No: Type '2'")
+
+            try:
+                user_input = int(input("\nEnter: "))
+            except ValueError:
+                print("\nThat is not a number.")
                 continue
 
-            # User input conditions.
-            if user_input == "yes":
-                break
-            if user_input == "no":
+            # User input validation conditions.
+            choices = [1, 2]
+            if user_input not in choices:
+                print(f"\n{user_input} is not an valid choice!")
+                continue
+            elif user_input == 1:
+                return
+            elif user_input == 2:
                 print("\nThank you for playing!")
                 quit()
