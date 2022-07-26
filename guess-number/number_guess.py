@@ -74,11 +74,16 @@ class NumberGuess:
 
                 # Correct computer guess condition.
                 if game == "computer_guess":
+                    # # Add point to computer score.
                     self.add_computer_score()
+                    # Display computer correct guesses.
                     self.computer_scoreboard()
+
                 # Correct player guess condition.
                 if game == "player_guess":
+                    # Add point to player score.
                     self.add_player_score()
+                    # Display player correct guesses.
                     self.player_scoreboard()
 
                 # Requesting user input.
