@@ -47,3 +47,8 @@ To launch the Guess Number Game run thus file.
   run.py
 ```
 ----
+## **License**
+
+[MIT License](https://github.com/niel-conradie/Guess-Number/blob/development/LICENSE)
+
+----
