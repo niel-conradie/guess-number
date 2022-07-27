@@ -49,6 +49,6 @@ To launch the Guess Number Game run thus file.
 ----
 ## **License**
 
-[MIT License](https://github.com/niel-conradie/Guess-Number/blob/development/LICENSE)
+[MIT License](https://github.com/niel-conradie/Guess-Number/blob/master/LICENSE)
 
 ----
