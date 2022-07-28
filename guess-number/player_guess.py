@@ -63,5 +63,3 @@ class PlayerGuess:
             user_input_guess = self.user_input_guess(user_input)
             # Validating user input conditions.
             self.correct_guess(user_input_guess, random_number)
-
-        return "player_guess"
