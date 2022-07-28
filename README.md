@@ -1,6 +1,6 @@
 # **Guess Number**
 
-**Guess Number Game written in [Python](https://www.python.org).**
+**Guess Number Terminal Game written in [Python](https://www.python.org).**
 
 The game is two-player game called "Guess Number". The first player thinks of an integer within a known range. The second player tries to guess the number. If the guess is incorrect, then the first player tells the second player whether the guess was too high or too low.
 
@@ -42,7 +42,7 @@ Guess Number can be installed via [Pip](https://pypi.org/project/pip/). To start
 ----
 ## **Usage**
 
-To launch the Guess Number Game run thus file.
+To launch the Guess Number Game use thus file.
 ```bash
   run.py
 ```
