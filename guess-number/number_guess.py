@@ -82,7 +82,7 @@ class NumberGuess:
         """Requesting user input and validating choice."""
         while True:
             print("\nPlay Again?")
-            print("Yes: Type '1'")
+            print("\nYes: Type '1'")
             print("No: Type '2'")
 
             try:
