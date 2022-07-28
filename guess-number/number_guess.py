@@ -7,8 +7,7 @@ class NumberGuess:
 
     def __init__(self):
         """Initialize class attributes."""
-        self.computer_score = 0
-        self.player_score = 0
+        self.score = 0
 
     @staticmethod
     def user_input():
@@ -16,10 +15,10 @@ class NumberGuess:
         while True:
             print("\nSelect your game mode.")
             print("\nComputer Guess: Type '1'")
-            print("Player Guess: Type '2'\n")
+            print("Player Guess: Type '2'")
 
             try:
-                user_input = int(input("Enter: "))
+                user_input = int(input("\nEnter: "))
             except ValueError:
                 print("\nThat is not a number.")
                 continue
@@ -34,21 +33,13 @@ class NumberGuess:
             elif user_input == 2:
                 return PlayerGuess()
 
-    def add_computer_score(self):
-        """Add point to the computer score."""
-        self.computer_score += 1
+    def add_score(self):
+        """Add point to the scoreboard."""
+        self.score += 1
 
-    def computer_scoreboard(self):
+    def scoreboard(self):
         """Display the amount of correct answers."""
-        print(f"Correct: {self.computer_score}")
-
-    def add_player_score(self):
-        """Add point to the player score."""
-        self.player_score += 1
-
-    def player_scoreboard(self):
-        """Display the amount of correct answers."""
-        print(f"Correct: {self.player_score}")
+        print(f"Correct: {self.score}")
 
     def start_game(self):
         """Starting number guess game."""
@@ -58,21 +49,11 @@ class NumberGuess:
 
             while True:
                 # Starting the appropriate game mode.
-                game = user_input.start_game()
+                user_input.start_game()
 
-                # Correct computer guess condition.
-                if game == "computer_guess":
-                    # Add point to computer score.
-                    self.add_computer_score()
-                    # Display computer correct guesses.
-                    self.computer_scoreboard()
-
-                # Correct player guess condition.
-                if game == "player_guess":
-                    # Add point to player score.
-                    self.add_player_score()
-                    # Display player correct guesses.
-                    self.player_scoreboard()
+                # Correct guess.
+                self.add_score()
+                self.scoreboard()
 
                 # Requesting user input.
                 self.restart()
