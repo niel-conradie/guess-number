@@ -61,5 +61,3 @@ class ComputerGuess:
         user_input = self.user_input()
         # Computer guess the number.
         self.computer_guess(user_input)
-        
-        return 'computer_guess'
