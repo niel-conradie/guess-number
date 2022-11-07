@@ -15,8 +15,8 @@ Guess Number can be installed via [Pip](https://pypi.org/project/pip/). To start
 
 * **Clone Repository**
 ```bash
-  $ git clone https://github.com/niel-conradie/Guess-Number.git
-  $ cd Guess-Number
+  $ git clone https://github.com/niel-conradie/guess-number.git
+  $ cd guess-number
 ```
 ### **Pip Install**
 
