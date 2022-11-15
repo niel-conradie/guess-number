@@ -15,36 +15,39 @@ Guess Number can be installed via [Pip](https://pypi.org/project/pip/). To start
 
 * **Clone Repository**
 ```bash
-  $ git clone https://github.com/niel-conradie/guess-number.git
-  $ cd guess-number
+git clone https://github.com/niel-conradie/guess-number.git
+```
+* **Change Directory**
+```bash
+cd guess-number
 ```
 ### **Pip Install**
 
 * **Create Environment**
 ```bash
-  $ python -m venv .venv
+python -m venv .venv
 ```
 * **Activate Environment**
 ```bash
-  # Bash
-  $ source .venv/Scripts/activate
+# Bash
+$ source .venv/Scripts/activate
 
-  # Command Prompt
-  C:> .venv\Scripts\activate.bat
+# Command Prompt
+C:> .venv\Scripts\activate.bat
 
-  # macOS
-  $ .venv/bin/activate
+# macOS
+$ .venv/bin/activate
 
-  # PowerShell
-  PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-  PS C:> .venv\Scripts\Activate.ps1
+# PowerShell
+PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+PS C:> .venv\Scripts\Activate.ps1
 ```
 ----
 ## **Usage**
 
 To launch the Guess Number Game use thus file.
 ```bash
-  run.py
+run.py
 ```
 ----
 ## **License**
