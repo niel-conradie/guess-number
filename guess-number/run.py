@@ -1,3 +1,5 @@
+import sys
+
 from number_guess import NumberGuess
 
 
@@ -10,9 +12,9 @@ def run():
         run.start_game()
     except KeyboardInterrupt:
             # Stop the game.
-            print("\n\nProgram Terminated")
-            pass
+            sys.exit("\n\nProgram Terminated")
 
 
 if __name__ == "__main__":
     run()
+    
