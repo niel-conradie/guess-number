@@ -5,8 +5,13 @@ def run():
     """Number Guess."""
     run = NumberGuess()
 
-    # Starting the game.
-    run.start_game()
+    try:
+        # Starting the game.
+        run.start_game()
+    except KeyboardInterrupt:
+            # Stop the game.
+            print("\n\nProgram Terminated")
+            pass
 
 
 if __name__ == "__main__":
