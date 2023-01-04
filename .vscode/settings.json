@@ -1,15 +1,12 @@
 {
-  // visual studio code
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
 
-  // python
   "[python]": {
       "editor.tabSize": 4
     },
 
-  // formatting
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=80",]
+  "python.formatting.blackArgs": ["--line-length=80"]
 }
