@@ -11,10 +11,9 @@ def run():
         # Starting the game.
         run.start_game()
     except KeyboardInterrupt:
-            # Stop the game.
-            sys.exit("\n\nProgram Terminated")
+        # Stopping the game.
+        sys.exit("\n\nProgram Terminated")
 
 
 if __name__ == "__main__":
     run()
-    
