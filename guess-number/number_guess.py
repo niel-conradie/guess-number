@@ -64,10 +64,10 @@ class NumberGuess:
                 mode = self.game_mode(user_input)
                 # Starting the appropriate game mode.
                 mode.start_game()
+                
                 # Correct guess.
                 self.add_score()
                 self.scoreboard()
-                # Requesting user input.
                 self.restart()
 
     @staticmethod
