@@ -8,17 +8,20 @@ class PlayerGuess:
     def user_input():
         """Requesting user input and validating number."""
         while True:
+            # Requesting user input.
             try:
                 user_input = int(input("\nSelect a range between 1 and "))
-                if user_input == 0:
-                    print("\nThat is not a valid number.")
-                elif user_input < 0:
-                    print("\nThat is a negative number.")
-                else:
-                    return user_input
             except ValueError:
                 print("\nThat is not a number.")
                 continue
+
+            # User input validation conditions.
+            if user_input == 0:
+                print("\nThat is not a valid number.")
+            elif user_input < 0:
+                print("\nThat is a negative number.")
+            else:
+                return user_input
 
     @staticmethod
     def random_number(user_input):
