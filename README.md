@@ -66,8 +66,6 @@ python -m pip install -r requirements.txt
 
 - To launch the Guess Number game use the [run.py](https://github.com/niel-conradie/guess-number/blob/master/guess-number/run.py) file to start.
 
-- Select the game mode in the terminal window and have fun.
-
 ---
 
 ## **License**
