@@ -50,11 +50,9 @@ class NumberGuess:
             while True:
                 # Starting the appropriate game mode.
                 user_input.start_game()
-
                 # Correct guess.
                 self.add_score()
                 self.scoreboard()
-
                 # Requesting user input.
                 self.restart()
 
