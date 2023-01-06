@@ -13,10 +13,12 @@ class NumberGuess:
     def user_input():
         """Requesting user input and validating choice."""
         while True:
+            # Display user input options.
             print("\nSelect your game mode.")
             print("\nComputer Guess: Type '1'")
             print("Player Guess: Type '2'")
 
+            # Requesting user input.
             try:
                 user_input = int(input("\nEnter: "))
             except ValueError:
@@ -60,10 +62,12 @@ class NumberGuess:
     def restart():
         """Requesting user input and validating choice."""
         while True:
+            # Display user input options.
             print("\nPlay Again?")
             print("\nYes: Type '1'")
             print("No: Type '2'")
 
+            # Requesting user input.
             try:
                 user_input = int(input("\nEnter: "))
             except ValueError:
