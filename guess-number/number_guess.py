@@ -31,9 +31,19 @@ class NumberGuess:
                 print(f"\n{user_input} is not an valid choice!")
                 continue
             elif user_input == 1:
-                return ComputerGuess()
+                return "1"
             elif user_input == 2:
-                return PlayerGuess()
+                return "2"
+
+    @staticmethod
+    def game_mode(user_input):
+        """Assign user input to appropriate game mode."""
+        if user_input == "1":
+            mode = ComputerGuess()
+            return mode
+        elif user_input == "2":
+            mode = PlayerGuess()
+            return mode
 
     def add_score(self):
         """Add point to the scoreboard."""
@@ -50,8 +60,10 @@ class NumberGuess:
             user_input = self.user_input()
 
             while True:
+                # Assign user input to the game mode.
+                mode = self.game_mode(user_input)
                 # Starting the appropriate game mode.
-                user_input.start_game()
+                mode.start_game()
                 # Correct guess.
                 self.add_score()
                 self.scoreboard()
