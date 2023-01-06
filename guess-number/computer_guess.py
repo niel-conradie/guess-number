@@ -8,17 +8,20 @@ class ComputerGuess:
     def user_input():
         """Requesting user input and validating number."""
         while True:
+            # Requesting user input.
             try:
                 user_input = int(input("\nSelect a number to guess: "))
-                if user_input == 0:
-                    print("\nThat is not a valid number.")
-                elif user_input < 0:
-                    print("\nThat is a negative number.")
-                else:
-                    return user_input
             except ValueError:
                 print("\nThat is not a number.")
                 continue
+
+            # User input validation conditions.
+            if user_input == 0:
+                print("\nThat is not a valid number.")
+            elif user_input < 0:
+                print("\nThat is a negative number.")
+            else:
+                return user_input
 
     @staticmethod
     def computer_guess(number):
@@ -33,13 +36,14 @@ class ComputerGuess:
             else:
                 guess = low
 
-            # Requesting user input and validating choice.
+            # Requesting user input.
             while True:
                 user_input = input(
                     f"\nIf {guess} is correct then type 'C',"
                     "\ntoo low 'L', and too high 'H': "
                 ).lower()
 
+                # User input validation conditions.
                 choices = ["c", "l", "h"]
                 if user_input in choices:
                     break
@@ -47,7 +51,7 @@ class ComputerGuess:
                     print(f"\n{user_input} is not an valid choice!")
                     continue
 
-            # User input conditions.
+            # User input validated conditions.
             if user_input == "h":
                 high = guess - 1
             elif user_input == "l":
