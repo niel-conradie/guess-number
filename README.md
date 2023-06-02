@@ -9,7 +9,6 @@ The game is two-player game called "Guess Number". The first player thinks of an
 ## **Requirements**
 
 - [Python 3.X](https://www.python.org/downloads/)
-- [Black](https://pypi.org/project/black/)
 
 ---
 
@@ -54,11 +53,7 @@ PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 PS C:> .venv\Scripts\Activate.ps1
 ```
 
-- **Install Requirements**
 
-```bash
-python -m pip install -r requirements.txt
-```
 
 ---
 
